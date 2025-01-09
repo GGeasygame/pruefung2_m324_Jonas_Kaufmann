@@ -39,3 +39,18 @@ jobs:
         with:
           message: |
             There's a new PR
+
+  review:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+
+      - name: AI Code Reviewer
+        uses: ggeasygame/ai-code-reviewer@main
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          OPENAI_API_KEY: ${{secrets.OPENAI_API_KEY}}
+          open_ai_model: gpt-3.5-turbo
+          with-comment: true
+        
