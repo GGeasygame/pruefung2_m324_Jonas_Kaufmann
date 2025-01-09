@@ -29,20 +29,13 @@ jobs:
       - name: Run tests
         run: npm run test
 
-  pkg-size-report:
-    name: Package Size Report
+  comment:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v2
+        uses: actions/checkout@v3
+      - name: Comment
+        uses: 'thollander/actions-comment-pull-request@v2'
         with:
-          node-version: '18'
-
-      - name: Package size report
-        uses: pkg-size/action@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          message: |
+            There's a new PR

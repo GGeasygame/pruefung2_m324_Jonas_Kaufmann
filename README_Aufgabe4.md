@@ -1,1 +1,1 @@
-Die Action pkg-size/action@v1 zeigt die Package-Grösse an. Dies kann bei PR verwendet werden, um zu sehen, wie gross das Projekt ist; somit kann mein leichter ein Auge auf die Grösse haben.
+Die Action thollander/actions-comment-pull-request@v2 fügt einen Kommentar hinzu. Somit kann man gewisse Informationen über die PR etc. ausgeben.
