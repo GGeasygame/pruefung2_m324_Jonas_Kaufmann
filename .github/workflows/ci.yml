@@ -54,7 +54,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: AI Code Reviewer
-        uses: aidar-freeed/ai-codereviewer@main
+        uses: aidar-freeed/ai-codereviewer@v2.7.0
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           OPENAI_API_KEY: ${{secrets.OPENAI_API_KEY}}
