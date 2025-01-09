@@ -1,0 +1,1 @@
+Die Action pkg-size/action@v1 zeigt die Package-Grösse an. Dies kann bei PR verwendet werden, um zu sehen, wie gross das Projekt ist; somit kann mein leichter ein Auge auf die Grösse haben.
